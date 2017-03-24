@@ -1,27 +1,27 @@
 ---
 title: <span style="color:#0085A1; font-size:5rem">Student Growth Percentiles</span>
-author: |
-  | <a href="https://github.com/dbetebenner"><span style="font-size:2rem">Damian Betebenner</span></a>
-  | <span style="color:#00274c font-size:2rem">Senior Associate </span>
-  | <a href="https://github.com/centerforassessment"><span style="font-size:2rem">National Center for the Improvement of Educational Assessment</span></a>
-date: '`r Sys.Date()`'
+subtitle: "Theory and Implementation in R"
+author: "Damian W Betebenner & Adam VanIwaarden"
+date: "`r Sys.Date()`"
 output:
-  html_document:
-    css: tufte-css-master/tufte.css
-    highlight: pygments
-    keep_md: no
-    theme: cosmo
-    toc: yes
-    toc_float: yes
+    html_document:
+        css: tufte-css-master/tufte.css
+        highlight: pygments
+        keep_md: no
+        theme: cosmo
+        toc: yes
+        toc_float: yes
+    bookdown::tufte_book2:
+        includes:
+            in_header: preamble.tex
+            before_body: dedication.tex
+        latex_engine: xelatex
+        citation_package: natbib
 bibliography: refs.bib
 nocite: |
   @Betebenner:2009, @RSoftware, @SGP:2017, @ShangVanI:2015
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = T, message = F, warning = F, R.options=list(width=120),
-                      fig.width=8, fig.align = 'center', comment=NA, autodep=T)
-library(SGP); library(data.table); library(SGPdata)
-```
+
 
 
 # [Preface](#preface)
