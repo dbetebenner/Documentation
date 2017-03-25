@@ -2,7 +2,7 @@
 title: <span style="color:#0085A1; font-size:5rem">Student Growth Percentiles</span>
 subtitle: "Theory and Implementation in R"
 author: "Damian W Betebenner & Adam VanIwaarden"
-date: "`r Sys.Date()`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
     html_document:
         css: tufte-css-master/tufte.css
@@ -14,10 +14,13 @@ output:
     bookdown::tufte_book2:
         includes:
             in_header: preamble.tex
-            before_body: dedication.tex
+            before_body: before_body.tex
         latex_engine: xelatex
         citation_package: natbib
-bibliography: refs.bib
+        keep_tex: yes
+bibliography: bibliography/refs.bib
+#abstract: "This document provides an introduction to student growth percentiles (SGP)"
+keywords: "SGP, student growth percentiles, student growth projections, R"
 nocite: |
   @Betebenner:2009, @RSoftware, @SGP:2017, @ShangVanI:2015
 ---
@@ -33,6 +36,7 @@ As this document is more conceptual, a basic familiarity with R is all that is n
 
 This document was created with [Rstudio](http://rstudio.org/) and rmarkdown. <span class="marginnote">Last modified `r Sys.Date()`. Original draft August, 2012.</span>
 
+\cite{Betebenner:2009}
 
 Color guide:
 
