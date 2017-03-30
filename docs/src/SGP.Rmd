@@ -8,7 +8,7 @@ output:
         css: tufte-css-master/tufte.css
         highlight: pygments
         keep_md: no
-        theme: cosmo
+        theme: cerulean
         toc: yes
         toc_float: yes
     bookdown::tufte_book2:
@@ -17,7 +17,7 @@ output:
             before_body: before_body.tex
         latex_engine: xelatex
         citation_package: natbib
-        keep_tex: yes
+#        keep_tex: yes
 bibliography: bibliography/refs.bib
 #abstract: "This document provides an introduction to student growth percentiles (SGP)"
 keywords: "SGP, student growth percentiles, student growth projections, R"
